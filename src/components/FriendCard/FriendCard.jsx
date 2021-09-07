@@ -1,8 +1,8 @@
 import { Frienditem, IsOnline, Avatar, Name } from "./FriendCard.styled";
 
-const FriendCard = ({ avatar, name, isOnline, id }) => {
+const FriendCard = ({ avatar, name, isOnline }) => {
   return (
-    <Frienditem key={id}>
+    <Frienditem>
       <IsOnline isOnline={isOnline}></IsOnline>
       <Avatar src={avatar} alt={name} width="80" />
       <Name>{name}</Name>

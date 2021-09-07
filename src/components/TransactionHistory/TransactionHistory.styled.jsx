@@ -28,7 +28,7 @@ export const Body = styled.tbody`
 `;
 
 export const TabelRow = styled.tr`
-&:nth-child(2n) {
+&:nth-of-type(2n) {
   background: rgba(228, 228, 228, 0.5);;
 `;
 
