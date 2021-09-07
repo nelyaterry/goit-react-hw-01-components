@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import { Container } from "../../assets/Container.styled";
+import { Container } from "../Container.styled";
 import {
   Description,
   Avatar,
@@ -13,15 +13,7 @@ import {
   Quantity,
 } from "./Profile.styled";
 
-export const Profile = ({
-  name,
-  tag,
-  location,
-  avatar,
-  followers,
-  views,
-  likes,
-}) => {
+export const Profile = ({ name, tag, location, avatar, stats }) => {
   return (
     <Container>
       <Description>
@@ -34,15 +26,15 @@ export const Profile = ({
       <Stats>
         <Stat>
           <Label>Followers</Label>
-          <Quantity>{followers}</Quantity>
+          <Quantity>{stats.followers}</Quantity>
         </Stat>
         <Stat>
           <Label>Views</Label>
-          <Quantity>{views}</Quantity>
+          <Quantity>{stats.views}</Quantity>
         </Stat>
         <Stat>
           <Label>Likes</Label>
-          <Quantity>{likes}</Quantity>
+          <Quantity>{stats.likes}</Quantity>
         </Stat>
       </Stats>
     </Container>

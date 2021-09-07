@@ -19,9 +19,7 @@ export const App = () => {
           tag={tag}
           location={location}
           avatar={avatar}
-          followers={stats.followers}
-          views={stats.views}
-          likes={stats.likes}
+          stats={stats}
         />
 
         <Statistics title="Upload stats" stats={statisticalData} />

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import { Container } from "../../assets/Container.styled";
+import { Container } from "../Container.styled";
 import { Title, StatsList, StatItem, Span } from "./Statistics.styled";
 
 const Statistic = ({ title, stats }) => {
